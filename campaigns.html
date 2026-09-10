@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campaigns — Rory Hanrahan</title>
+  <meta name="description" content="Campaigns and projects: The First Pint, Veterans’ Story Hour, I Stand With British Jews, and more." />
+  <link rel="canonical" href="https://roryhanrahan.co.uk/campaigns.html" />
+  <meta name="theme-color" content="#8b1a1a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://roryhanrahan.co.uk/campaigns.html" />
+  <meta property="og:title" content="Campaigns — Rory Hanrahan" />
+  <meta property="og:description" content="Campaigns and projects: The First Pint, Veterans’ Story Hour, I Stand With British Jews, and more." />
+  <meta property="og:image" content="https://roryhanrahan.co.uk/assets/og-default.jpg" />
+  <meta property="og:site_name" content="Rory Hanrahan" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Campaigns — Rory Hanrahan" />
+  <meta name="twitter:description" content="Campaigns and projects: The First Pint, Veterans’ Story Hour, I Stand With British Jews, and more." />
+  <meta name="twitter:image" content="https://roryhanrahan.co.uk/assets/og-default.jpg" />
+  <meta name="twitter:creator" content="@RoryHanrahan5" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#1c1917', paper: '#f7f3eb', cream: '#faf6f0',
+            accent: '#8b1a1a', accent2: '#b45309', muted: '#57534e', soft: '#e7e0d5'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
+            sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #f7f3eb;
+      background-image:
+        radial-gradient(ellipse at top, rgba(139,26,26,0.04), transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(180,83,9,0.05), transparent 45%);
+    }
+    #mobile-nav:not(.hidden) { display: block; }
+  </style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased leading-relaxed">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-accent text-white px-4 py-2 rounded z-50">Skip to content</a>
+
+  <header class="border-b border-soft bg-cream/90 backdrop-blur sticky top-0 z-40">
+    <div class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between gap-4">
+      <a href="/" class="font-serif text-xl tracking-tight font-semibold text-accent">Rory Hanrahan</a>
+      <nav id="desktop-nav" class="hidden lg:flex gap-4 text-sm text-muted" aria-label="Primary">
+        <a href="/" class="hover:text-ink transition">Home</a>
+        <a href="/writing.html" class="hover:text-ink transition">Writing</a>
+        <a href="/pubs.html" class="hover:text-ink transition">Pubs</a>
+        <a href="/campaigns.html" class="text-ink font-medium">Campaigns</a>
+        <a href="/column.html" class="hover:text-ink transition">Column</a>
+        <a href="/media.html" class="hover:text-ink transition">Media</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://roryhanrahan.substack.com/" class="hidden sm:inline-block text-xs sm:text-sm bg-accent text-white px-3 py-1.5 rounded hover:bg-red-900 transition" target="_blank" rel="noopener">Subscribe</a>
+        <button type="button" id="nav-toggle" class="lg:hidden inline-flex items-center justify-center p-2 rounded border border-soft text-ink hover:bg-white" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="hidden lg:hidden border-t border-soft bg-cream px-5 py-3 text-sm" aria-label="Mobile">
+        <a href="/" class="block py-2 text-muted hover:text-ink">Home</a>
+        <a href="/writing.html" class="block py-2 text-muted hover:text-ink">Writing</a>
+        <a href="/pubs.html" class="block py-2 text-muted hover:text-ink">Pubs</a>
+        <a href="/campaigns.html" class="block py-2 text-ink font-medium">Campaigns</a>
+        <a href="/column.html" class="block py-2 text-muted hover:text-ink">Column</a>
+        <a href="/media.html" class="block py-2 text-muted hover:text-ink">Media</a>
+        <a href="https://roryhanrahan.substack.com/" class="block py-2 text-accent font-medium" target="_blank" rel="noopener">Subscribe</a>
+    </nav>
+  </header>
+  <script>
+    (function () {
+      var btn = document.getElementById('nav-toggle');
+      var panel = document.getElementById('mobile-nav');
+      if (!btn || !panel) return;
+      function setOpen(open) {
+        panel.classList.toggle('hidden', !open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+      btn.addEventListener('click', function () {
+        setOpen(btn.getAttribute('aria-expanded') !== 'true');
+      });
+      btn.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+      panel.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { setOpen(false); });
+      });
+    })();
+  </script>
+  <main id="main" class="max-w-3xl mx-auto px-5 py-14">
+    <p class="text-sm uppercase tracking-widest text-accent2 mb-2">Hub</p>
+    <h1 class="font-serif text-4xl mb-4">Campaigns</h1>
+    <p class="text-muted mb-10 max-w-2xl">Causes, pilots and running jokes — from real ale to veterans’ stories. Every existing page URL stays put; this hub just gathers them.</p>
+    <ul class="space-y-4">
+      <li class="border border-soft rounded-lg bg-white p-5 shadow-sm">
+        <a href="/first-pint.html" class="font-serif text-xl text-accent hover:underline">The First Pint</a>
+        <p class="text-muted text-sm mt-1">Real ale for 18–30s, and anyone who has never tried it.</p>
+      </li>
+      <li class="border border-soft rounded-lg bg-white p-5 shadow-sm">
+        <a href="/veterans.html" class="font-serif text-xl text-accent hover:underline">Veterans’ Story Hour</a>
+        <p class="text-muted text-sm mt-1">Armed Forces veterans sharing stories of service in pubs, schools and libraries. Pilot: Mon 14 Sep 2026, The Vine Inn.</p>
+      </li>
+      <li class="border border-soft rounded-lg bg-white p-5 shadow-sm">
+        <a href="/jews.html" class="font-serif text-xl text-accent hover:underline">I Stand With British Jews</a>
+        <p class="text-muted text-sm mt-1">A quiet campaign of solidarity. Badges, not marches.</p>
+      </li>
+      <li class="border border-soft rounded-lg bg-white p-5 shadow-sm">
+        <a href="/after-the-settlement.html" class="font-serif text-xl text-accent hover:underline">After the Settlement</a>
+        <p class="text-muted text-sm mt-1">Ireland &amp; legacy — the delayed claim about Peter McCormack.</p>
+      </li>
+      <li class="border border-soft rounded-lg bg-white p-5 shadow-sm">
+        <a href="/lifetime.html" class="font-serif text-xl text-accent hover:underline">Lifetime Achievement Awards</a>
+        <p class="text-muted text-sm mt-1">For outstanding service to absolute and utter tosh and nonsense.</p>
+      </li>
+      <li class="border border-soft rounded-lg bg-white p-5 shadow-sm">
+        <a href="/human-being.html" class="font-serif text-xl text-accent hover:underline">Human Being of the Week</a>
+        <p class="text-muted text-sm mt-1">A highly competitive award. Rarely awarded for actual humanity.</p>
+      </li>
+      <li class="border border-soft rounded-lg bg-white p-5 shadow-sm">
+        <a href="/jew-hater.html" class="font-serif text-xl text-accent hover:underline">Let’s Make This Jew-Hater Famous</a>
+        <p class="text-muted text-sm mt-1">An Irishman in France. Recorded. Still unnamed.</p>
+      </li>
+      <li class="border border-soft rounded-lg bg-white p-5 shadow-sm">
+        <a href="/reading.html" class="font-serif text-xl text-accent hover:underline">Reading — Vandalising Ireland</a>
+        <p class="text-muted text-sm mt-1">Dr Eoin Lenihan’s bestseller on how Ireland is being reshaped.</p>
+      </li>
+    </ul>
+  </main>
+  <footer class="border-t border-soft bg-cream py-10 mt-8">
+    <div class="max-w-5xl mx-auto px-5 text-sm text-muted flex flex-col sm:flex-row justify-between gap-4">
+      <p>© 2026 Rory Hanrahan · <a href="https://roryhanrahan.co.uk" class="underline hover:text-ink">roryhanrahan.co.uk</a>
+        · <a href="https://ko-fi.com/roryhanrahan" class="hover:text-ink" target="_blank" rel="noopener">Buy the landlord a pint</a></p>
+      <p class="flex flex-wrap gap-x-4 gap-y-1">
+        <a href="/writing.html" class="hover:text-ink">Writing</a>
+        <a href="/pubs.html" class="hover:text-ink">Pubs</a>
+        <a href="/campaigns.html" class="hover:text-ink">Campaigns</a>
+        <a href="/column.html" class="hover:text-ink">Column</a>
+        <a href="/media.html" class="hover:text-ink">Media</a>
+        <a href="/privacy.html" class="hover:text-ink">Privacy</a>
+        <a href="https://roryhanrahan.substack.com/" class="hover:text-ink" target="_blank" rel="noopener">Substack</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
