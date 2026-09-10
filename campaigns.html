@@ -11,13 +11,13 @@
   <meta property="og:url" content="https://roryhanrahan.co.uk/campaigns.html" />
   <meta property="og:title" content="Campaigns — Rory Hanrahan" />
   <meta property="og:description" content="Campaigns and projects: The First Pint, Veterans’ Story Hour, I Stand With British Jews, and more." />
-  <meta property="og:image" content="https://roryhanrahan.co.uk/assets/og-default.jpg" />
+  <meta property="og:image" content="https://roryhanrahan.co.uk/assets/og-default.svg" />
   <meta property="og:site_name" content="Rory Hanrahan" />
   <meta property="og:locale" content="en_GB" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Campaigns — Rory Hanrahan" />
   <meta name="twitter:description" content="Campaigns and projects: The First Pint, Veterans’ Story Hour, I Stand With British Jews, and more." />
-  <meta name="twitter:image" content="https://roryhanrahan.co.uk/assets/og-default.jpg" />
+  <meta name="twitter:image" content="https://roryhanrahan.co.uk/assets/og-default.svg" />
   <meta name="twitter:creator" content="@RoryHanrahan5" />
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -81,30 +81,7 @@
         <a href="https://roryhanrahan.substack.com/" class="block py-2 text-accent font-medium" target="_blank" rel="noopener">Subscribe</a>
     </nav>
   </header>
-  <script>
-    (function () {
-      var btn = document.getElementById('nav-toggle');
-      var panel = document.getElementById('mobile-nav');
-      if (!btn || !panel) return;
-      function setOpen(open) {
-        panel.classList.toggle('hidden', !open);
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-        btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-      }
-      btn.addEventListener('click', function () {
-        setOpen(btn.getAttribute('aria-expanded') !== 'true');
-      });
-      btn.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
-      });
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') setOpen(false);
-      });
-      panel.querySelectorAll('a').forEach(function (a) {
-        a.addEventListener('click', function () { setOpen(false); });
-      });
-    })();
-  </script>
+  <script src="/assets/nav.js" defer></script>
   <main id="main" class="max-w-3xl mx-auto px-5 py-14">
     <p class="text-sm uppercase tracking-widest text-accent2 mb-2">Hub</p>
     <h1 class="font-serif text-4xl mb-4">Campaigns</h1>
