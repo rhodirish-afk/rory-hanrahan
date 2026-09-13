@@ -19,34 +19,7 @@
   <meta name="twitter:description" content="Privacy note for roryhanrahan.co.uk: a personal static site. Contact and RSVP by email." />
   <meta name="twitter:image" content="https://roryhanrahan.co.uk/assets/og-default.svg" />
   <meta name="twitter:creator" content="@RoryHanrahan5" />
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: '#1c1917', paper: '#f7f3eb', cream: '#faf6f0',
-            accent: '#8b1a1a', accent2: '#b45309', muted: '#57534e', soft: '#e7e0d5'
-          },
-          fontFamily: {
-            serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
-            sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body {
-      background-color: #f7f3eb;
-      background-image:
-        radial-gradient(ellipse at top, rgba(139,26,26,0.04), transparent 50%),
-        radial-gradient(ellipse at bottom right, rgba(180,83,9,0.05), transparent 45%);
-    }
-    #mobile-nav:not(.hidden) { display: block; }
-  </style>
+  <link rel="stylesheet" href="/assets/tailwind.css" />
 </head>
 <body class="bg-paper text-ink font-sans antialiased leading-relaxed">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-accent text-white px-4 py-2 rounded z-50">Skip to content</a>
@@ -90,7 +63,7 @@
       <p><strong class="text-ink">Contact and RSVP.</strong> If you email <a href="mailto:myone_ie@hotmail.co.uk" class="text-accent hover:underline">myone_ie@hotmail.co.uk</a> (for example to RSVP to Veterans’ Story Hour, or about The First Pint), that correspondence is handled in ordinary email. Do not send sensitive personal data you would not want in an inbox.</p>
       <p><strong class="text-ink">Haters / screenshots.</strong> The “Haters of the Week” corner may publish screenshots of public comments. If you send material for that purpose, assume it may appear on the site. Ask before sharing anything that identifies a private individual in a harmful way.</p>
       <p><strong class="text-ink">External links.</strong> Links to Substack, X, Facebook, Ko-fi, newspapers and other sites are subject to those sites’ own privacy practices.</p>
-      <p><strong class="text-ink">Hosting.</strong> GitHub (and visitors’ browsers/CDNs such as the Tailwind CDN) may process standard technical request logs. See GitHub’s privacy documentation for Pages hosting.</p>
+      <p><strong class="text-ink">Hosting.</strong> GitHub Pages may process standard technical request logs. See GitHub’s privacy documentation for Pages hosting.</p>
       <p>Questions: <a href="mailto:myone_ie@hotmail.co.uk" class="text-accent hover:underline">myone_ie@hotmail.co.uk</a>.</p>
     </div>
   </main>
