@@ -1,10 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <rect width="1200" height="630" fill="#f7f3eb"/>
-  <rect width="1200" height="12" fill="#8b1a1a"/>
-  <rect y="618" width="1200" height="12" fill="#8b1a1a"/>
-  <circle cx="180" cy="315" r="100" fill="#8b1a1a"/>
-  <text x="320" y="280" font-family="Georgia, serif" font-size="64" fill="#1c1917">Rory Hanrahan</text>
-  <text x="320" y="340" font-family="system-ui, sans-serif" font-size="28" fill="#8b1a1a">Writer · Publican · Campaigner</text>
-  <text x="320" y="400" font-family="system-ui, sans-serif" font-size="22" fill="#57534e">Politics, pubs, Ireland, and common sense</text>
-  <text x="320" y="450" font-family="system-ui, sans-serif" font-size="22" fill="#b45309">roryhanrahan.co.uk</text>
+  <rect width="16" height="630" fill="#8b1a1a"/>
+  <text x="80" y="250" font-family="Georgia, serif" font-size="64" fill="#8b1a1a">Rory Hanrahan</text>
+  <text x="80" y="320" font-family="Georgia, serif" font-size="32" fill="#57534e">Writer · Publican · Campaigner</text>
+  <text x="80" y="520" font-family="Georgia, serif" font-size="22" fill="#b45309">roryhanrahan.co.uk</text>
 </svg>
