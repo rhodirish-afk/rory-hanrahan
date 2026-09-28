@@ -27,7 +27,7 @@ ul, ol { padding: 0; list-style: none; }
 #mobile-nav:not(.hidden) { display: block; }
 
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
-.focus\:not-sr-only:focus { position: static; width: auto; height: auto; padding: 0; margin: 0; overflow: visible; clip: auto; white-space: normal; }
+.focus\:not-sr-only:focus { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; white-space: normal; }
 .focus\:absolute:focus { position: absolute; }
 .focus\:top-4:focus { top: 1rem; }
 .focus\:left-4:focus { left: 1rem; }
@@ -220,3 +220,17 @@ ul, ol { padding: 0; list-style: none; }
   .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
+
+/* Review pass 2: utilities used in pages but previously missing */
+.relative { position: relative; }
+.left-0 { left: 0; }
+.h-full { height: 100%; }
+.space-y-5 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.25rem; }
+
+/* Review pass 2: visible keyboard focus */
+a:focus-visible, button:focus-visible, iframe:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid var(--accent2);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.bg-ink a:focus-visible, .bg-accent a:focus-visible { outline-color: #fcd34d; }
