@@ -8,7 +8,7 @@
   --muted: #57534e;
   --soft: #e7e0d5;
 }
-*, *::before, *::after { box-sizing: border-box; border-color: var(--soft); }
+*, *::before, *::after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: var(--soft); }
 html { scroll-behavior: smooth; line-height: 1.5; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
@@ -23,7 +23,7 @@ img, svg, video { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: inherit; }
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
 h1, h2, h3, h4, p, ul, ol, figure { margin: 0; }
-ul, ol { padding: 0; }
+ul, ol { padding: 0; list-style: none; }
 #mobile-nav:not(.hidden) { display: block; }
 
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }

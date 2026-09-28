@@ -2,7 +2,7 @@
 
 Personal site for Rory Hanrahan — writer, publican and campaigner.
 
-**Live site:** https://rhodirish-afk.github.io/rory-hanrahan/
+**Live site:** https://roryhanrahan.co.uk/ (custom domain via `CNAME`)
 
 ## Enable GitHub Pages
 
@@ -11,4 +11,4 @@ Personal site for Rory Hanrahan — writer, publican and campaigner.
 3. Select branch **main** and folder **/ (root)**
 4. Click **Save**
 
-The site will be live at the URL above within a minute or two.
+The site will be live at the URL above within a minute or two. Keep the `CNAME` file so the custom domain keeps working.
